@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    list-style: none;
+}
+
+html,body{
+    width: 100%;
+    height: 100vh;
+}
+ body{
+    background-color: black;
+ }
+.curser{
+    /* transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    position: fixed;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 9999;
+}
+.main{
+    color: #fff;
+    width: 100%;
+    background-color: black;
+    height: auto;
+}
+
+.main .hero{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    position: relative;
+}
+
+.main .hero .nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw 3vw;
+}
+.main .hero .nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5vw;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.main .hero .nav h5{
+    font-size: 1vw;
+}
+
+
+.main .hero .nav .menubar{
+    width: 480px;
+    position: absolute;
+    right: 130px;
+    display: none;
+}
+.main .hero .nav .menubar ul li{
+    display: inline;
+    margin-left: 0.7vw;
+}
+.main .hero .nav .menubar ul li a{
+    display: inline;
+    font-size: 1vw;
+}
+
+.hero-text{
+    width: 100%;
+    padding: 2vw 4vw;
+}
+
+.hero-text h1{
+    opacity: .6;
+    font-size: 9vw;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.hero-text .Shariq{
+    margin-left: 30vw;
+}
+.text{
+    width: fit-content;
+    overflow: hidden;
+}
+.text h5{
+    opacity: .6;
+    padding-top: 15px;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.rahnamoon{
+    width: fit-content;
+    overflow: hidden;
+}
+
+.hero-sub-text{
+    width: 100%;
+    padding-right: 40px;
+    text-align: right;
+    overflow: hidden;
+}
+.hero-sub-text h1{
+    opacity: .6;
+    text-transform: uppercase;
+    font-size: 0.8vw;
+}
+
+.hero-footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px;
+    position: absolute;
+    bottom: 30px;
+    overflow: hidden;
+}
+.hero-footer h3{
+    opacity: .6;
+    font-size: 1vw;
+}
+.hero-footer .icons i{
+
+    padding: 5px;
+
+}
+
+
+.ic1{
+        border: 1px solid #888;
+        border-radius: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.ic1:hover{
+    color: black;
+    background-color: white;
+    transition: all 0.5s;
+}
+
+.courses{
+    width: 100%;
+    height: fit-content;
+    background-color: black;
+    padding-top: 70px;
+}
+
+.courses .elem{
+    margin-left: 10px;
+    width: 90%;
+    padding-left: 55px;
+    font-size: 2.6vw;
+    padding: 40px 30px;
+    border-top: 1px solid #888;
+    position: relative;
+    cursor: none;
+    overflow: hidden;
+    /* pointer-events: none; */
+  
+}
+.courses .elem h1{
+    position: relative;
+    top: 200px;
+    opacity: 0.6;
+    cursor: none;
+}
+.courses .elem h1.action{
+    top: 0;
+    transition: top 1s;
+}
+.courses .elem h1 a{
+      text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    cursor: none;
+}
+.last{
+    border-bottom: 1px solid #888;
+}
+
+
+.courses .elem:hover h1{
+    opacity: 0.5;
+    margin-left: 30px;
+    transition: 1s;
+
+}
+
+
+.services{
+    width: 100%;
+    height: 100vh;
+    padding: 120px 40px;
+}
+.services .row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+}
+.services .row .box{
+    width: 450px;
+    height: 500px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+}
+.services .row .box h1{
+    font-size: 3vw;
+}
+.services .row .box p{
+    font-size: 1vw;
+}
+.services .row .box a{
+    width: 140px;
+    padding: 10px;
+    border: 1px solid rgb(158, 158, 158);
+    border-radius: 20px;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+}
+
+.services .row .box a:hover{
+    background-color: #888;
+    transition: 0.5s;
+}
+/* .services .row .box.action{
+    top: 0;
+} */
+
+
+.about{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20%;
+    gap: 25px;
+}
+.about .about-img{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+.about .about-img img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+.about .about-text{
+    width: 700px;
+}
+
+.about .about-text p{
+    text-transform: uppercase;
+    line-height: 2;
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    padding: 30px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer .footer-nav ul li{
+    display: inline;
+    margin-right: 20px;
+}
